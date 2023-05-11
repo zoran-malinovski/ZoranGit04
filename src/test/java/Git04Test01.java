@@ -15,4 +15,14 @@ public class Git04Test01 {
         driver.get("https://www.google.com/");
         driver.manage().window().maximize();
     }
+
+    @Test
+    public void Test02(){
+        System.out.println("Vtor test");
+
+        WebDriver driver;
+        System.setProperty("webdriver.chrome.driver", "C:\\Chrome Drivers\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://banzae.dev/");
+    }
 }
