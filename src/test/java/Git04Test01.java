@@ -1,10 +1,11 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Git04Test01 {
 
-    @Test
+    @Test(priority = 3)
     public void Test01(){
 
         System.out.println("Prv test");
@@ -16,7 +17,7 @@ public class Git04Test01 {
         driver.manage().window().maximize();
     }
 
-    @Test
+    @Test(priority = 1)
     public void Test02(){
         System.out.println("Vtor test");
 
@@ -26,7 +27,7 @@ public class Git04Test01 {
         driver.get("https://banzae.dev/");
     }
 
-    @Test
+    @Test(priority = 2)
     public void Test03(){
         System.out.println("Test 03 - promena");
         WebDriver driver;
@@ -36,7 +37,9 @@ public class Git04Test01 {
         driver.manage().window().maximize();
     }
 
+    @Test
     public void Test04(){
         System.out.println("nova granka");
+        //Assert.assertEquals(1,2);
     }
 }
