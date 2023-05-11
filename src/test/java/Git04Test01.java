@@ -35,4 +35,8 @@ public class Git04Test01 {
         driver.get("https://banzae.dev/#contact");
         driver.manage().window().maximize();
     }
+
+    public void Test04(){
+        System.out.println("nova granka");
+    }
 }
