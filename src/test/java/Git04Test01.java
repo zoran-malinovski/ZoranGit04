@@ -25,4 +25,14 @@ public class Git04Test01 {
         driver = new ChromeDriver();
         driver.get("https://banzae.dev/");
     }
+
+    @Test
+    public void Test03(){
+        System.out.println("Test 03");
+        WebDriver driver;
+        System.setProperty("webdriver.chrome.driver", "C:\\Chrome Drivers\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://banzae.dev/#contact");
+        driver.manage().window().maximize();
+    }
 }
