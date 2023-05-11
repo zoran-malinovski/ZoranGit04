@@ -28,7 +28,7 @@ public class Git04Test01 {
 
     @Test
     public void Test03(){
-        System.out.println("Test 03");
+        System.out.println("Test 03 - promena");
         WebDriver driver;
         System.setProperty("webdriver.chrome.driver", "C:\\Chrome Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
