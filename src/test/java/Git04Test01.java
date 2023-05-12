@@ -25,6 +25,7 @@ public class Git04Test01 {
         System.setProperty("webdriver.chrome.driver", "C:\\Chrome Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://banzae.dev/");
+        driver.manage().window().maximize();
     }
 
     @Test(priority = 2)
@@ -40,6 +41,6 @@ public class Git04Test01 {
     @Test
     public void Test04(){
         System.out.println("nova granka");
-        //Assert.assertEquals(1,2);
+        Assert.assertEquals(1,2);
     }
 }
